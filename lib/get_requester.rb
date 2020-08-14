@@ -16,8 +16,8 @@ class GetRequester # is a class that can be initiated by passing in a URL
     response.body
   end
 
-  def parse_json
-    response = JSON.parse(self.get_response_body)
+  def parse_json #is an instance method on the GetRequester class
+    response = JSON.parse(self.get_response_body) # converts JSON returned from 'get_response_body' into Ruby data structures
   end
 
 
