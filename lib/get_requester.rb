@@ -1,8 +1,12 @@
 require 'open-uri'
 require 'net/http'
 
+class GetRequester
 
-def GetRequester
-  uri = URI.parse(URL)
-  response = Net::HTTP.get_response(uri)
-end
+  URL = 
+
+
+  def get_requester
+    uri = URI.parse(URL)
+    response = Net::HTTP.get_response(uri)
+  end
