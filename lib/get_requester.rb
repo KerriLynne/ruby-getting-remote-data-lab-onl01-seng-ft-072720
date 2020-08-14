@@ -13,4 +13,4 @@ class GetRequester
     response.body
   end
 
-
+end
