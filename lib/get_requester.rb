@@ -10,9 +10,9 @@ class GetRequester # is a class that can be initiated by passing in a URL
     @url = url
   end
 
-  def get_response_body
+  def get_response_body #is an instance method on the GetRequester class
     uri = URI.parse(URL)
-    response = Net::HTTP.get_response(uri)
+    response = Net::HTTP.get_response(uri) #sends a GET request to the URL provided on initialization, returning the body of the request
     response.body
   end
 
